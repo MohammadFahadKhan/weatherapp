@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root{
+    --main-bg :#1e272e;
+    --main-color :#0097e6;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row{
+    margin: 0 !important;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color: #fff !important;
+    background-color: var(--main-bg) !important;
+    padding: 2rem 0;
+}
+
+.navbar a{
+    color: #fff !important;
+    font-size: 1.8rem !important;
+}
+.navbar-toggler{
+    background-color: grey;
+}
+
+#navbarId{
+    position: relative;
+    left: 8rem;
+}
+
+.nav-item{
+    padding-left:5rem ;
+}
+
+.navbar-brand:hover{
+    color: var(--main-color) !important;
+}
+
+
+.fa-snowflake{
+    transition:  all linear;
+    animation: rot 2.5s linear infinite ;
+    color: var(--main-color);
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* main header  */
+.main_header_left{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_left p{
+    font-size: 2.2rem;
+}
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem  0;
+    text-transform: capitalize;
+}
+
+.main_header_left .text_clr{
+    color: var(--main-color);
+}
+.main_header_left button{
+  padding: 0.8rem 1.8rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+  outline: none;
+  border: none;
+}
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_right figure img{
+    filter: drop-shadow(0 0.5rem 11rem skyblue);
+}
+
+/* footer style  */
+footer{
+    width: 100%  ;
+    background-color: var(--main-bg) ;
+    margin-top: auto ;
+}
+footer{
+    width: 100%  ;
+    background-color: var(--main-bg) ;
+    margin-top: auto !important ;
+}
+footer p{
+    margin: 0%;
+    text-align: center;
+    color: #fff;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+/* error page style */
+.errimg img{
+    width: 60rem;
+    height: 30rem;
+}
+
+
+
+/* Weather page style  */
+.main_content{
+ margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.temp_form{
+background-color: rgb(255, 255, 255);
+display: flex;
+background-color: grey;
+align-items:center;
+justify-content: space-between;
+width: 60vw;
+border-radius: 20px;
+}
+.temp_form input[type=text]{
+    font-size: 2rem;
+    padding:10px 20px;
+ 
+    background-color:transparent;
+    border: none;
+    outline: none;
+    color: white;
+    /* border-radius: 20px; */
+}
+.temp_form input[type=text]::placeholder{
+    color: rgba(255, 255, 255, 0.644);
+    cursor:progress;
+}
+.temp_form input[type=submit]{
+    color: white;
+    background-color: skyblue;
+    font-size: 2rem;
+    padding:10px 20px;
+    width: 10vw;
+    /* background-color: transparent; */
+    border: none;
+    outline: none;
+border-radius: 20px;
+margin: 5px;
+}
+.tempInformation{
+background-color: rgb(68, 68, 68);
+width: 32vw;
+/* margin:10px auto 0px  auto; */
+height: 36rem;
+margin:70px auto 0px auto;
+padding:10px 10px 10px 10px;
+border-radius: 10px;
+}
+.top_layer{
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    background-color:rgb(48, 48, 48);
+    margin: auto;
+    padding: 30px 30px 10px 30px;
+    border-radius: 10px;
+}
+#day{
+    color: white;
+    font-weight: bold;
+font-size: 2rem;
+line-height: 3rem;
+}
+#today_date{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.main_layer{
+background-color:transparent;
+
+display: flex;
+flex-direction: column;
+    justify-content: space-between;
+    width: 30vw;
+  
+    margin:10px auto 5px auto;
+    padding: 30px 30px 10px 30px;
+    border-radius: 10px;
+}
+#city_name{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 26vw;
+    text-justify:distribute;
+    display: block;
+    /* background-color: rgb(51, 51, 51); */
+}
+.middle_layer{
+background-color: transparent;
+height: 150px;
+color: white;
+}
+#temp{
+font-size: 6rem;
+text-align: center;
+}
+#temp_status{
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+
+
+
+/* responsive code  */
+@media(max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem;
+    }
+    .tempInformation{
+        height: 41rem;
+        width: 30rem;
+    }
+    .top_layer{
+        width: 70vw;
+    }
+    /* #city_name{
+        width: 80vw;
+    } */
+
+}
